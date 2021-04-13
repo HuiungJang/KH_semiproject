@@ -4,14 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="../mainpage/css/common.css">
+  <link rel="stylesheet" type="text/css" href="../mainpage/css/mainpage.css">
+  <script src="../library/jquery.3.6.0.js"></script>
   <title>요리 에센스 : 나만의 맛있는 레시피</title>
 </head>
 <body>
   <header>
     <div>
       <a href="">
-        <span><img id="mainlogo" src="../image/세미프로젝트 로고.png"></span>
+        <span><img id="mainlogo" src="../image/logo.png"></span>
       </a>
     </div>
     <div id="menu">
@@ -25,7 +26,7 @@
     </div>
     <div id="submenu">
       <div >     
-        <a href=""><img id="searchicon" src="../image/검색.png" alt=""></a>
+        <a><img id="searchicon" src="../image/search.png" alt=""></a>
       </div>
       <div>
         <a href=""><img id="loginicon" src="../image/login.png" alt=""></a>
@@ -50,37 +51,37 @@
         <a class="viewmore" href="">view more ></a>
       </div>
       <div id="menulogo">
-        <img src="../image/추천메뉴로고.png" alt="">
+        <img src="../image/bestmenulogo.png" alt="">
       </div>
       <div class="wrap">
         <ul>
           <li>
-              <div><img class="product_imgsize" src="../image/전골.jpg" alt=""></div>
+              <div><img class="product_imgsize" src="../image/gook.jpg" alt=""></div>
               <span class="category">전골/국/육수</span><br>
               <span class="productname">양배추</span>
           </li>
           <li>
-              <div><img class="product_imgsize" src="../image/파스타.jpg" alt=""></div>
+              <div><img class="product_imgsize" src="../image/pasta.jpg" alt=""></div>
               <span class="category">면/파스타/피자</span><br>
               <span class="productname">파스타</span>
           </li>
           <li>
-              <div><img class="product_imgsize" src="../image/피자.jpg" alt=""></div>
+              <div><img class="product_imgsize" src="../image/pizza.jpg" alt=""></div>
               <span class="category">면/파스타/피자</span><br>
               <span class="productname">피자</span>
           </li>
           <li>
-            <div><img class="product_imgsize" src="../image/전골.jpg" alt=""></div>
+            <div><img class="product_imgsize" src="../image/gook.jpg" alt=""></div>
             <span class="category">전골/국/육수</span><br>
             <span class="productname">양배추</span>
         </li>
         <li>
-            <div><img class="product_imgsize" src="../image/파스타.jpg" alt=""></div>
+            <div><img class="product_imgsize" src="../image/pasta.jpg" alt=""></div>
             <span class="category">면/파스타/피자</span><br>
             <span class="productname">파스타</span>
         </li>
         <li>
-            <div><img class="product_imgsize" src="../image/피자.jpg" alt=""></div>
+            <div><img class="product_imgsize" src="../image/pizza.jpg" alt=""></div>
             <span class="category">면/파스타/피자</span><br>
             <span class="productname">피자</span>
         </li>
@@ -97,5 +98,13 @@
       <p class="sign">세미프로젝트<br> 조장 : 장희웅 조원 : 권설영 김세희 박유현 최찬규</p>
     </div>
   </footer>
+
+  <script>
+    $(function(){
+      $("#searchicon").click((e)=>{
+        $(location).attr("href", "../searchPage/searchPage.html");           
+      });
+    });
+  </script>
 </body>
 </html>
