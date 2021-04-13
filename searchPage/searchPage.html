@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/search.css">
+  <link rel="stylesheet" href="../common/common.css">
+  <script src="../library/jquery.3.6.0.js"></script>
+  <title>search</title>
+</head>
+<body>
+  <div id="wrap">
+    <div id="close"><img src="../image/close.png" height="80px" width="80px"></div>
+    <div id="searchPart">
+      <div id="searchBox">
+        <span><input type="search" name="" id="search" placeholder="SEARCH"></span>
+        <span><img src="../image/search.png" alt="" height="70px" width="70px" id="searchimg"></span>
+      </div>
+      <div class="textBox">
+        <div class="title">당신의 맛있는 하루를 위한</ㅇ>
+        <div class="hash">
+          <ul id="hashtag">
+            <li>#샐러드</li>
+            <li>#자취음식</li>
+            <li>#간편요리</li>
+            <li>#다이어트</li>
+            <li>#전골요리</li>
+            <li>#파티요리</li>
+            <li>#집밥</li>
+            <li>#간식</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(function(){
+      $("#close>img").click((e)=>{
+        $(location).attr("href", "../mainpage/mainpage.html");           
+      });
+    })
+  </script>
+</body>
+</html>
