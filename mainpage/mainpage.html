@@ -15,7 +15,7 @@
         <span><img id="mainlogo" src="../image/logo.png"></span>
       </a>
     </div>
-    <div id="menu">
+    <nav id="menu">
         <ul>
           <li><a class="underline" href="">KOREAN</a></li>
           <li><a class="underline" href="">WESTERN</a></li>
@@ -23,17 +23,17 @@
           <li><a class="underline" href="">JAPANESE</a></li>
           <li><a class="underline" href="">HEALTHY</a></li>
         </ul>
-    </div>
+    </nav>
     <div id="submenu">
-      <div >     
+      <span>     
         <a><img id="searchicon" src="../image/search.png" alt=""></a>
-      </div>
-      <div>
-        <a href=""><img id="loginicon" src="../image/login.png" alt=""></a>
-      </div>
-      <div>      
+      </span>
+      <span>
+        <a href=""><img id="loginicon"src="../image/login.png" alt=""></a>
+      </span>
+      <span>      
         <a href=""><img id="carticon" src="../image/cart.png" alt=""></a>
-      </div>
+      </span>
     </div>
   </header>
   <section>
@@ -102,7 +102,7 @@
   <script>
     $(function(){
       $("#searchicon").click((e)=>{
-        $(location).attr("href", "../searchPage/searchPage.html");           
+        $(location).attr("href","../searchPage/searchPage.html");           
       });
     });
   </script>
