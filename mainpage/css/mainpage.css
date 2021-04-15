@@ -115,7 +115,7 @@ section{
   padding-top:30px;
   padding-left:880px;
 }
-.banneropacity span{
+.banneropacity div{
   font-family: 'Dosis', 'Nanum Gothic', sans-serif;
   font-size:60px;
   display: block;
@@ -124,19 +124,26 @@ section{
 .banneropacity .brandstory{
   font-size: 45px;
   margin-left:100px;
-  margin-bottom: 10px;
+  margin-top:5px;
   letter-spacing: 20px;
+  position: absolute;
 }
 .banneropacity .copy{
   letter-spacing: 40px;
   line-height: 100px;
+  margin-top:67px;
+  position: absolute;
+
 }
 .banneropacity .learnmore>a{
   font-size:30px;
   color: #FFFFFF;
-  margin-left:39%;
+  margin-left:600px;
+  position: absolute;
+  margin-top: 270px;
 }
-.learnmore:hover{
+
+.learnmore>a:hover{
   text-decoration: 3px solid underline;
 }
 /* 추천메뉴 */
@@ -192,6 +199,89 @@ section{
   width:300px;
   height:300px
 }
+
+/* ranktable */
+#tableContainer{
+  margin-top:1250px;
+  margin-left:500px;
+  position: absolute;
+}
+
+#rankTable{
+  /* position:fixed; */
+  /* vertical-align: middle; */
+  /* max-width: 60%;
+  min-width: 60%;
+  margin-left:20%;
+  margin-top:30%;   */
+  /* overflow-x: scroll;
+  overflow-y: scroll; */
+}
+#rankTable td{
+  font-family:"awesome";
+  font-size: 30px;
+}
+#chefName{
+  color:rgb(69, 139, 84)
+}
+
+#imoticon{
+color: rgb(182, 182, 182);
+   /* text-shadow: 0 0 2px rgba(165, 164, 161, 0.7), 0 0 0 rgb(182, 180, 180); */
+}
+.message{
+  justify-content:center;
+ /* color: transparent; */
+  background: transparent;
+  color: rgb(182, 182, 182);
+  border-color: lightgray;
+  border-radius: 10px;
+  border:0.1px;
+  border-style: solid;
+
+  height:30px;
+ /* text-shadow: 0 0 2px rgba(154, 231, 174, 0.7), 0 0 0 rgb(182, 180, 180); */
+}
+.message:hover{
+  text-shadow: 0 0 0 rgb(93, 248, 235);
+  transform:scale(1.1); 
+}
+
+
+.btn-like {
+  justify-content:center;
+  color: transparent;
+  background-color:white;
+  border:0;
+  text-shadow: 0 0 2px rgba(255, 217, 0, 0.7), 0 0 0 rgb(182, 180, 180);
+}
+.btn-like:hover {
+  text-shadow: 0 0 0 #ea0;
+}
+.btn-like.done {
+  color: inherit;
+  text-shadow: 0;
+}
+.btn-like.done:hover {
+  color: transparent;
+  text-shadow: 0 0 0 #777;
+}
+#img2{
+  width:150px;
+  height:150px;
+  border-radius:70%;
+  -webkit-border-radius:70%;
+  -moz-border-radius:70%;
+  -ms-border-radius:70%;
+  -o-border-radius:70%;
+}
+#img2:hover{
+  cursor: pointer;
+}
+th{
+  justify-content: center;
+}
+
 
 /* footer */
 footer{
