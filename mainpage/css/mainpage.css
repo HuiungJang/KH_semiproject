@@ -9,9 +9,8 @@ header{
   color: black;
   height: 120px;
   width: 100%;
-  display: fixed;
+  position: relative;
 }
-/* header span{display: inline-block;} */
 header a{
   font-family: 'Dosis', sans-serif;
   font-size:38px;
@@ -23,13 +22,14 @@ header div
   display: inline-block;  
   font-family: 'Dosis', sans-serif;
   font-size:40px;
+  position: absolute;
 }
 
 #mainlogo{
-  height:100px; 
-  width: 270px; 
+  height:210px; 
+  width: 200px; 
   margin-left:40px; 
-  margin-top:20px;
+  margin-top:-30px;
 }
 /* menu */
 header li{
@@ -40,8 +40,9 @@ header li{
 #menu{
   letter-spacing: 4px;
   width:1000px;
-  margin-left:9%;
-  margin-bottom:27px;
+  margin-left: 450px;
+  margin-top:45px;
+  display: inline-block;  
 }
 #menu a:hover{
   color: #1F695B;
@@ -59,15 +60,12 @@ header li{
 
 /* 로그인,검색,카트 css */
 #submenu{
-  margin-top:20px;
-  float: right;
-  margin-right:2%;
-  margin-top:30px;
+  margin-left:600px;
+  margin-top:30px; 
 }
 #searchicon{
-  width:50px;
-  height:50px;
-  margin-right:10px;
+  width:55px;
+  height:55px;
 }
 #searchicon:hover{
   opacity:0.5;
@@ -76,7 +74,7 @@ header li{
 #loginicon{
   width:55px;
   height:55px;
-  margin-right:20px;
+  margin-left: 15px;
 }
 #loginicon:hover{
   opacity:0.5;
@@ -85,13 +83,16 @@ header li{
 #carticon{
   width:60px;
   height:60px;
-  margin-right:10px;
+  margin-left: 25px;
 }
 #carticon:hover{
   opacity:0.5;
 }
 
 /* section banner*/
+section{
+  position: relative;
+}
 #banner{
   height: 400px;
   width: 100%;
@@ -100,6 +101,10 @@ header li{
   color:#000000;
   background-image:url("../../image/banner.jpg");
   background-attachment: fixed;
+  position: absolute;
+}
+#bannertext span{
+  position: absolute;
 }
 .banneropacity{
   background-color:rgba(0, 0, 0, 0.5);
@@ -108,7 +113,7 @@ header li{
 }
 .bannertext{
   padding-top:30px;
-  padding-left:35%;
+  padding-left:880px;
 }
 .banneropacity span{
   font-family: 'Dosis', 'Nanum Gothic', sans-serif;
@@ -118,7 +123,7 @@ header li{
 }
 .banneropacity .brandstory{
   font-size: 45px;
-  margin-left:7%;
+  margin-left:100px;
   margin-bottom: 10px;
   letter-spacing: 20px;
 }
@@ -136,9 +141,11 @@ header li{
 }
 /* 추천메뉴 */
 .bestmenu{
-  width:100%;
+  width:1920px;
   height:1800px;
-  position: relative;
+  position: absolute;
+  margin-top: 400px;
+  margin-left: 300px;
 }
 #menulogo{
   margin-top:200px;
@@ -193,6 +200,8 @@ footer{
   font-family: 'Dosis', sans-serif,'Nanum Gothic', sans-serif;
   font-size:30px;
   text-align: center;
+  position: absolute;
+  margin-top:2000px;
 }
 .sign{
   font-size:20px;
