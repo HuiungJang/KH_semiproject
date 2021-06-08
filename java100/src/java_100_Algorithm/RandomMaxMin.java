@@ -16,9 +16,6 @@ public class RandomMaxMin {
             if(max < arg[i]){
                 max = arg[i];
             }
-        }
-
-        for(int i = 0; i<arg.length; i++){
             if(min > arg[i]){
                 min = arg[i];
             }
